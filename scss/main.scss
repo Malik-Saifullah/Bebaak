@@ -385,6 +385,35 @@ img{
                     }
                 }
             }
+            .detail-size-box{
+                margin: 50px 0;
+                display: grid;
+                grid-template-columns:1fr 1fr 1fr;
+                .size-item-box{
+                    display: flex;
+                    align-items: center;
+                    .detail-icon-box{
+                        display: flex;
+                        align-items: center;
+                        margin-right: 10px;
+                        img{
+                            width: 40px;
+                        }
+                        p{
+                            margin: 0 5px;
+                            font-size: 12px;
+                            @include fontNormal;
+                            text-transform: capitalize;
+                        }
+                    }
+                    .detail-size-value-box{
+                        p{
+                            font-size: 12px;
+                            @include fontNormal;
+                        }
+                    }
+                }
+            }
             .cart-item-btn-box{
                 margin: 30px 0;
                 .cart-btn-price,.cart-btn-favourte{
@@ -549,7 +578,14 @@ img{
                     poster section
 =======================================================*/
 #poster{
-    margin-top: 90px;
+    margin-top: 100px;
+}
+
+/*=======================================================
+                email-subscribe section
+=======================================================*/
+#featured{
+    margin-bottom: 50px;
 }
 
 /*=======================================================
