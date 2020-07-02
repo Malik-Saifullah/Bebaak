@@ -500,26 +500,29 @@ img{
         product page hero-cart-banner section
 =======================================================*/
 #size-chart{
+    margin: 100px 0;
     .container{
         display: grid;
         grid-template-columns: 1fr 1fr;
+        column-gap: 50px;
+        @media (max-width: 768px) {
+            grid-template-columns:1fr;
+        }
         .size-chart-detail-box{
             .detail-size-box{
                 margin: 50px 0;
                 display: grid;
-                grid-template-columns:1fr 1fr 1fr;
-                @media (max-width: 768px) {
-                    grid-template-columns:1fr 1fr;
-                }
+                grid-template-columns:1fr 1fr;
                 .size-item-box{
                     display: flex;
                     align-items: center;
+                    margin: 20px 10px;
                     .detail-icon-box{
                         display: flex;
                         align-items: center;
                         margin-right: 10px;
                         img{
-                            width: 40px;
+                            width: 50px;
                         }
                         p{
                             margin: 0 5px;
