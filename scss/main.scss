@@ -389,6 +389,9 @@ img{
                 margin: 50px 0;
                 display: grid;
                 grid-template-columns:1fr 1fr 1fr;
+                @media (max-width: 768px) {
+                    grid-template-columns:1fr 1fr;
+                }
                 .size-item-box{
                     display: flex;
                     align-items: center;
@@ -486,6 +489,50 @@ img{
                     }
                     i.fa-facebook-f{
                         padding: 17px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*=======================================================
+        product page hero-cart-banner section
+=======================================================*/
+#size-chart{
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        .size-chart-detail-box{
+            .detail-size-box{
+                margin: 50px 0;
+                display: grid;
+                grid-template-columns:1fr 1fr 1fr;
+                @media (max-width: 768px) {
+                    grid-template-columns:1fr 1fr;
+                }
+                .size-item-box{
+                    display: flex;
+                    align-items: center;
+                    .detail-icon-box{
+                        display: flex;
+                        align-items: center;
+                        margin-right: 10px;
+                        img{
+                            width: 40px;
+                        }
+                        p{
+                            margin: 0 5px;
+                            font-size: 12px;
+                            @include fontNormal;
+                            text-transform: capitalize;
+                        }
+                    }
+                    .detail-size-value-box{
+                        p{
+                            font-size: 12px;
+                            @include fontNormal;
+                        }
                     }
                 }
             }
