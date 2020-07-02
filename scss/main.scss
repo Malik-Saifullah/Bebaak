@@ -389,6 +389,9 @@ img{
                 margin: 50px 0;
                 display: grid;
                 grid-template-columns:1fr 1fr 1fr;
+                @media (max-width: 768px) {
+                    grid-template-columns:1fr 1fr;
+                }
                 .size-item-box{
                     display: flex;
                     align-items: center;
@@ -486,6 +489,74 @@ img{
                     }
                     i.fa-facebook-f{
                         padding: 17px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*=======================================================
+        product page hero-cart-banner section
+=======================================================*/
+#size-chart{
+    margin: 100px 0;
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 50px;
+        @media (max-width: 992px) {
+            grid-template-columns:1fr;
+        }
+        .size-chart-box{
+            img{
+                padding-right: 15%;
+            }
+        }
+        .size-chart-detail-box{
+            .detail-size-box{
+                display: grid;
+                grid-template-columns:1fr 1fr;
+                .size-item-box{
+                    display: flex;
+                    align-items: center;
+                    margin: 0 10px 50px 10px;
+                    .detail-icon-box{
+                        display: flex;
+                        align-items: center;
+                        margin-right: 10px;
+                        img{
+                            width: 50px;
+                        }
+                        p{
+                            margin: 0 5px;
+                            font-size: 12px;
+                            @include fontNormal;
+                            text-transform: capitalize;
+                            width: 80px;
+                            text-align: left;
+                            margin-left: 20px;
+                        }
+                    }
+                    .detail-size-value-box{
+                        p{
+                            font-size: 12px;
+                            @include fontNormal;
+                        }
+                    }
+                }
+                .size-item-box:nth-child(even){
+                    justify-content: flex-end;
+                    .detail-icon-box{
+                        p{
+                            width: 100px;
+                            text-align: left;
+                            margin-left: 20px;
+                        }
+                    }
+                    .detail-size-value-box{
+                        width: 50px;
+                        text-align: right;
                     }
                 }
             }
