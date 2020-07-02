@@ -290,7 +290,7 @@ img {
             column-gap: 20px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   #hero-cart-banner .container {
     grid-template-columns: 1fr;
     -webkit-column-gap: 0;
@@ -573,6 +573,30 @@ img {
 }
 #hero-cart-banner .container .social-icon-container .social-icon-box .icon i.fa-facebook-f {
   padding: 17px;
+}
+
+/*=======================================================
+            cart page user-cart-item section
+=======================================================*/
+.user-cart-item #hero-cart-banner .container .cart-info-box {
+  padding-top: 30px;
+  padding-right: 15%;
+}
+.user-cart-item #hero-cart-banner .container .cart-info-box .detail-size-box {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+@media (max-width: 992px) {
+  .user-cart-item #hero-cart-banner .container .cart-info-box .detail-size-box {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .user-cart-item #hero-cart-banner .container .cart-info-box .detail-size-box {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.user-cart-item #hero-cart-banner .container .cart-info-box .detail-size-box .size-item-box {
+  margin-bottom: 30px;
 }
 
 /*=======================================================

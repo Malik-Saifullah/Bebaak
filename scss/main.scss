@@ -260,8 +260,8 @@ img{
         @media (max-width: 1024px) {
             column-gap: 20px;
         }
-        @media (max-width: 768px) {
-            grid-template-columns:1fr;
+        @media (max-width: 992px) {
+            grid-template-columns: 1fr;
             column-gap: 0;
         }
         .cart-img-box{
@@ -505,6 +505,32 @@ img{
                     }
                     i.fa-facebook-f{
                         padding: 17px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*=======================================================
+            cart page user-cart-item section
+=======================================================*/
+.user-cart-item{
+    #hero-cart-banner{
+        .container{
+            .cart-info-box{
+                padding-top: 30px;
+                padding-right: 15%;
+                .detail-size-box{
+                    grid-template-columns:1fr 1fr 1fr 1fr;
+                    @media (max-width: 992px){
+                        grid-template-columns: 1fr 1fr 1fr;
+                    }
+                    @media (max-width: 768px){
+                        grid-template-columns: 1fr 1fr;
+                    }
+                    .size-item-box{
+                        margin-bottom: 30px;
                     }
                 }
             }
