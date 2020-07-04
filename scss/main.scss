@@ -260,8 +260,8 @@ img{
         @media (max-width: 1024px) {
             column-gap: 20px;
         }
-        @media (max-width: 768px) {
-            grid-template-columns:1fr;
+        @media (max-width: 992px) {
+            grid-template-columns: 1fr;
             column-gap: 0;
         }
         .cart-img-box{
@@ -513,7 +513,38 @@ img{
 }
 
 /*=======================================================
-        product page hero-cart-banner section
+            cart page user-cart-item section
+=======================================================*/
+.user-cart-item{
+    #hero-cart-banner{
+        .container{
+            .cart-info-box{
+                padding-top: 30px;
+                padding-right: 15%;
+                .selected-product-price{
+                    font-size: 12px;
+                    color: red;
+                    @include fontBold;
+                }
+                .detail-size-box{
+                    grid-template-columns:1fr 1fr 1fr 1fr;
+                    @media (max-width: 992px){
+                        grid-template-columns: 1fr 1fr 1fr;
+                    }
+                    @media (max-width: 768px){
+                        grid-template-columns: 1fr 1fr;
+                    }
+                    .size-item-box{
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*=======================================================
+        product page size-chart section
 =======================================================*/
 #size-chart{
     margin: 100px 0;
