@@ -592,6 +592,21 @@ img {
 }
 
 /*=======================================================
+                    support page
+=======================================================*/
+.container {
+    @include fontNormal;
+
+    #Bebaakoverview,
+    #Bebaak-love-to-surve,
+    #Bebaak-policies,
+    #shipment-policy {
+        margin: 100px auto;
+        text-align: center;
+    }
+}
+
+/*=======================================================
             cart page user-cart-item section
 =======================================================*/
 .user-cart-item {
@@ -646,6 +661,11 @@ img {
             grid-template-columns: 2fr 1fr;
             column-gap: 20px;
 
+            @media(max-width: 992px) {
+                grid-template-columns: 1fr;
+                column-gap: 0;
+            }
+
             .cart-item-titile {
                 @include fontNormal;
             }
@@ -654,6 +674,12 @@ img {
                 display: grid;
                 grid-template-columns: 1fr 2fr;
                 column-gap: 40px;
+
+                @media(max-width: 768px) {
+                    grid-template-columns: 1fr;
+                    column-gap: 0;
+                }
+
                 margin: 20px 0;
                 border-bottom: 8px solid gainsboro;
                 padding-top: 20px;
@@ -663,11 +689,21 @@ img {
                     display: grid;
                     position: relative;
 
+                    @media(max-width: 768px) {
+                        display: block;
+                        position: unset;
+                    }
+
                     .upper-section {
                         position: absolute;
                         top: 0;
                         width: 100%;
                         margin-bottom: 20px;
+
+                        @media(max-width: 768px) {
+                            display: block;
+                            position: unset;
+                        }
 
                         h3 {
                             @include fontBold;
@@ -679,6 +715,11 @@ img {
                         position: absolute;
                         bottom: 0;
                         width: 100%;
+
+                        @media(max-width: 768px) {
+                            display: block;
+                            position: unset;
+                        }
 
                         p {
                             @include fontNormal;
@@ -1219,6 +1260,7 @@ img {
     display: grid;
     background-color: $colorBlack;
     width: 100%;
+    margin-top: 50px;
 
     .container {
         .footer-top {
