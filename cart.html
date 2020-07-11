@@ -1,461 +1,468 @@
 <!DOCTYPE html>
 <html lang="en-US">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <link rel="shortcut icon" href="./images/fav-icon.png" type="image/x-icon">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./scss/main.css">
-    </head>
-    <body>
-        <div class="wrapper">
-            <header id="header" class="header">
-                <div class="container">
-                    <div class="logo-box">
-                        <a href="index.html" class="logo">
-                            <img src="./images/header-black-logo.png" alt="logo">
-                        </a>
-                    </div>
-                    <nav class="navbar" id="nav-toggle">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a href="index.html" class="nav-link">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <span class="nav-link active" onclick="myFunction()">
-                                    Bebaak Women
-                                    <i class="fas fa-sort-down"></i>
-                                </span>
-                                <div class="dropdown-menu" id="dropdown-toggle">
-                                    <a class="dropdown-item" href="men-collection.html">Bebaak men</a>
-                                    <a class="dropdown-item" href="women-collection.html">Bebaak women</a>
-                                    <a class="dropdown-item" href="couple-collection.html">Bebaak couple</a>
-                                </div>
-                            </li>
-                            <li class="nav-item">
-                                <a href="lookbook.html" class="nav-link">Lookbook</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="stores.html" class="nav-link">Stores</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="support.html" class="nav-link">Support</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <div class="cart-option">
-                        <i class="fas fa-bars" id="btn-toggle" onclick="btnToggle()"></i>
-                        <i class="fas fa-search"></i>
-                        <i class="fas fa-shopping-cart"></i>
-                        <a href="sign-in.html" class="login-btn">Sign In</a>
-                    </div>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="./images/fav-icon.png" type="image/x-icon">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./scss/main.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header id="header" class="header">
+            <div class="container">
+                <div class="logo-box">
+                    <a href="index.html" class="logo">
+                        <img src="./images/header-black-logo.png" alt="logo">
+                    </a>
                 </div>
-            </header>
-            <main id="main">
-                <div class="user-cart-item">
-                    <section id="hero-cart-banner">
-                        <div class="container">
-                            <div class="cart-img-box">
-                                <div class="img-container">
-                                    <div class="img-box">
-                                        <img src="./images/product1.png" alt="">
-                                        <img src="./images/product.png" alt="">
-                                        <img src="./images/product2.png" alt="">
-                                    </div>
-                                </div>
-                                <img src="./images/product.png" alt="">
+                <nav class="navbar" id="nav-toggle">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <span class="nav-link active" onclick="myFunction()">
+                                Bebaak Women
+                                <i class="fas fa-sort-down"></i>
+                            </span>
+                            <div class="dropdown-menu" id="dropdown-toggle">
+                                <a class="dropdown-item" href="men-collection.html">Bebaak men</a>
+                                <a class="dropdown-item" href="women-collection.html">Bebaak women</a>
+                                <a class="dropdown-item" href="couple-collection.html">Bebaak couple</a>
                             </div>
-                            <div class="cart-info-box">
-                                <span class="tag">Women's</span>
-                                <span class="selected-product-price">PKR 3500</span>
-                                <h3 class="cart-item-title">Product name | Women wear Bebaak</h3>
-                                <p class="cart-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, consectetur. Provident, fugiat dicta? Sunt ducimus neque, animi dolore delectus sequi voluptas atque iure officiis nostrum ut quis repellendus pariatur veritatis?</p>
-                                <div class="cart-item-stock-code-box">
-                                    <span class="sub-title"><strong>Stock Code:</strong> 6CV27</span>
-                                </div>
-                                <div class="cart-item-size-box">
-                                    <span class="sub-title"><strong>Size: </strong></span>
-                                    <div class="size-box">
-                                        <label class="checkbox-container">
-                                            <input type="checkbox">
-                                            <span class="checkmark">S</span>
-                                        </label>
-                                        <label class="checkbox-container">
-                                            <input type="checkbox">
-                                            <span class="checkmark">M</span>
-                                        </label>
-                                        <label class="checkbox-container">
-                                            <input type="checkbox">
-                                            <span class="checkmark">L</span>
-                                        </label>
-                                        <label class="checkbox-container">
-                                            <input type="checkbox">
-                                            <span class="checkmark">XL</span>
-                                        </label>
-                                        <label class="checkbox-container">
-                                            <input type="checkbox">
-                                            <span class="checkmark">XXL</span>
-                                        </label>
-                                        <label class="checkbox-container">
-                                            <input type="checkbox">
-                                            <span class="checkmark">CUSTOM</span>
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="detail-size-box">
-                                    <div class="size-item-box">
-                                        <div class="detail-icon-box">
-                                            <img src="./images/icons/bust.png" alt="">
-                                            <p>Chest</p>
-                                        </div>
-                                        <div class="detail-size-value-box">
-                                            <p>35.5</p>
-                                        </div>
-                                    </div>
-                                    <div class="size-item-box">
-                                        <div class="detail-icon-box">
-                                            <img src="./images/icons/waist.png" alt="">
-                                            <p>Waist</p>
-                                        </div>
-                                        <div class="detail-size-value-box">
-                                            <p>27</p>
-                                        </div>
-                                    </div>
-                                    <div class="size-item-box">
-                                        <div class="detail-icon-box">
-                                            <img src="./images/icons/Hip.png" alt="">
-                                            <p>Hip</p>
-                                        </div>
-                                        <div class="detail-size-value-box">
-                                            <p>37.5</p>
-                                        </div>
-                                    </div>
-                                    <div class="size-item-box">
-                                        <div class="detail-icon-box">
-                                            <img src="./images/icons/shirt.png" alt="">
-                                            <p>Shirt Length</p>
-                                        </div>
-                                        <div class="detail-size-value-box">
-                                            <p>37.5</p>
-                                        </div>
-                                    </div>
-                                    <div class="size-item-box">
-                                        <div class="detail-icon-box">
-                                            <img src="./images/icons/seleves.png" alt="">
-                                            <p>Seleves</p>
-                                        </div>
-                                        <div class="detail-size-value-box">
-                                            <p>35.5</p>
-                                        </div>
-                                    </div>
-                                    <div class="size-item-box">
-                                        <div class="detail-icon-box">
-                                            <img src="./images/icons/belt.png" alt="">
-                                            <p>Trouser Waist</p>
-                                        </div>
-                                        <div class="detail-size-value-box">
-                                            <p>27</p>
-                                        </div>
-                                    </div>
-                                    <div class="size-item-box">
-                                        <div class="detail-icon-box">
-                                            <img src="./images/icons/thigh.png" alt="">
-                                            <p>Thighs</p>
-                                        </div>
-                                        <div class="detail-size-value-box">
-                                            <p>37.5</p>
-                                        </div>
-                                    </div>
-                                    <div class="size-item-box">
-                                        <div class="detail-icon-box">
-                                            <img src="./images/icons/trouser-length.png" alt="">
-                                            <p>Trouser Length</p>
-                                        </div>
-                                        <div class="detail-size-value-box">
-                                            <p>37.5</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
+                        </li>
+                        <li class="nav-item">
+                            <a href="lookbook.html" class="nav-link">Lookbook</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="stores.html" class="nav-link">Stores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="support.html" class="nav-link">Support</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="cart-option">
+                    <i class="fas fa-bars" id="btn-toggle" onclick="btnToggle()"></i>
+                    <i class="fas fa-search"></i>
+                    <i class="fas fa-shopping-cart"></i>
+                    <a href="sign-in.html" class="login-btn">Sign In</a>
                 </div>
-                <div class="user-cart-item">
-                    <section id="hero-cart-banner">
-                        <div class="container">
-                            <div class="cart-img-box">
-                                <div class="img-container">
-                                    <div class="img-box">
-                                        <img src="./images/product1.png" alt="">
-                                        <img src="./images/product.png" alt="">
-                                        <img src="./images/product2.png" alt="">
-                                    </div>
-                                </div>
-                                <img src="./images/product.png" alt="">
-                            </div>
-                            <div class="cart-info-box">
-                                <span class="tag">Women's</span>
-                                <span class="selected-product-price">PKR 3500</span>
-                                <h3 class="cart-item-title">Product name | Women wear Bebaak</h3>
-                                <p class="cart-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, consectetur. Provident, fugiat dicta? Sunt ducimus neque, animi dolore delectus sequi voluptas atque iure officiis nostrum ut quis repellendus pariatur veritatis?</p>
-                                <div class="cart-item-stock-code-box">
-                                    <span class="sub-title"><strong>Stock Code:</strong> 6CV27</span>
-                                </div>
-                                <div class="cart-item-size-box">
-                                    <span class="sub-title"><strong>Size: </strong></span>
-                                    <div class="size-box">
-                                        <label class="checkbox-container">
-                                            <input type="checkbox">
-                                            <span class="checkmark">S</span>
-                                        </label>
-                                        <label class="checkbox-container">
-                                            <input type="checkbox">
-                                            <span class="checkmark">M</span>
-                                        </label>
-                                        <label class="checkbox-container">
-                                            <input type="checkbox">
-                                            <span class="checkmark">L</span>
-                                        </label>
-                                        <label class="checkbox-container">
-                                            <input type="checkbox">
-                                            <span class="checkmark">XL</span>
-                                        </label>
-                                        <label class="checkbox-container">
-                                            <input type="checkbox">
-                                            <span class="checkmark">XXL</span>
-                                        </label>
-                                        <label class="checkbox-container">
-                                            <input type="checkbox">
-                                            <span class="checkmark">CUSTOM</span>
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="detail-size-box">
-                                    <div class="size-item-box">
-                                        <div class="detail-icon-box">
-                                            <img src="./images/icons/bust.png" alt="">
-                                            <p>Chest</p>
-                                        </div>
-                                        <div class="detail-size-value-box">
-                                            <p>35.5</p>
-                                        </div>
-                                    </div>
-                                    <div class="size-item-box">
-                                        <div class="detail-icon-box">
-                                            <img src="./images/icons/waist.png" alt="">
-                                            <p>Waist</p>
-                                        </div>
-                                        <div class="detail-size-value-box">
-                                            <p>27</p>
-                                        </div>
-                                    </div>
-                                    <div class="size-item-box">
-                                        <div class="detail-icon-box">
-                                            <img src="./images/icons/Hip.png" alt="">
-                                            <p>Hip</p>
-                                        </div>
-                                        <div class="detail-size-value-box">
-                                            <p>37.5</p>
-                                        </div>
-                                    </div>
-                                    <div class="size-item-box">
-                                        <div class="detail-icon-box">
-                                            <img src="./images/icons/shirt.png" alt="">
-                                            <p>Shirt Length</p>
-                                        </div>
-                                        <div class="detail-size-value-box">
-                                            <p>37.5</p>
-                                        </div>
-                                    </div>
-                                    <div class="size-item-box">
-                                        <div class="detail-icon-box">
-                                            <img src="./images/icons/seleves.png" alt="">
-                                            <p>Seleves</p>
-                                        </div>
-                                        <div class="detail-size-value-box">
-                                            <p>35.5</p>
-                                        </div>
-                                    </div>
-                                    <div class="size-item-box">
-                                        <div class="detail-icon-box">
-                                            <img src="./images/icons/belt.png" alt="">
-                                            <p>Trouser Waist</p>
-                                        </div>
-                                        <div class="detail-size-value-box">
-                                            <p>27</p>
-                                        </div>
-                                    </div>
-                                    <div class="size-item-box">
-                                        <div class="detail-icon-box">
-                                            <img src="./images/icons/thigh.png" alt="">
-                                            <p>Thighs</p>
-                                        </div>
-                                        <div class="detail-size-value-box">
-                                            <p>37.5</p>
-                                        </div>
-                                    </div>
-                                    <div class="size-item-box">
-                                        <div class="detail-icon-box">
-                                            <img src="./images/icons/trouser-length.png" alt="">
-                                            <p>Trouser Length</p>
-                                        </div>
-                                        <div class="detail-size-value-box">
-                                            <p>37.5</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-                <section id="user-cart-item-detail-box">
+            </div>
+        </header>
+        <main id="main">
+            <div class="user-cart-item">
+                <section id="hero-cart-banner">
                     <div class="container">
-                        <div class="user-cart-detail-title-box">
-                            <h3>Cart Detail</h3>
-                        </div>
-                        <div class="user-cart-item-detail-info">
-                            <div class="cart-item-box">
-                                <div class="cart-item-titile">
-                                    <p>There are <span class="item-in-cart">2</span> item in your cart.</p>
-                                </div>
-                                <div class="cart-item-container">
-                                    <div class="cart-item-img-box">
-                                        <img src="./images/women-collection-img01.png" alt="">
-                                    </div>
-                                    <div class="cart-item-detail-box">
-                                        <div class="upper-section">
-                                            <h3>Product Name | Women's wear Bebaak</h3>
-                                        </div>
-                                        <div class="bottom-section">
-                                            <p>Quantity</p>
-                                            <div class="quantitiy-box">
-                                                <div class="counter">
-                                                    <span class="button"> - </span>
-                                                    <span class="number"> 1 </span>
-                                                    <span class="button plus"> + </span>
-                                                </div>
-                                                <p class="total-price">PKR 5500</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="cart-item-container">
-                                    <div class="cart-item-img-box">
-                                        <img src="./images/women-collection-img01.png" alt="">
-                                    </div>
-                                    <div class="cart-item-detail-box">
-                                        <div class="upper-section">
-                                            <h3>Product Name | Women's wear Bebaak</h3>
-                                        </div>
-                                        <div class="bottom-section">
-                                            <p>Quantity</p>
-                                            <div class="quantitiy-box">
-                                                <div class="counter">
-                                                    <span class="button"> - </span>
-                                                    <span class="number"> 1 </span>
-                                                    <span class="button plus"> + </span>
-                                                </div>
-                                                <p class="total-price">PKR 5500</p>
-                                            </div>
-                                        </div>
-                                    </div>
+                        <div class="cart-img-box">
+                            <div class="img-container">
+                                <div class="img-box">
+                                    <img src="./images/product1.png" alt="">
+                                    <img src="./images/product.png" alt="">
+                                    <img src="./images/product2.png" alt="">
                                 </div>
                             </div>
-                            <div class="check-out">
-                                <div class="checkout-sub-title">
-                                    <h4>Ready to be Bebaak</h4>
+                            <img src="./images/product.png" alt="">
+                        </div>
+                        <div class="cart-info-box">
+                            <span class="tag">Women's</span>
+                            <span class="selected-product-price">PKR 3500</span>
+                            <h3 class="cart-item-title">Product name | Women wear Bebaak</h3>
+                            <p class="cart-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque,
+                                consectetur. Provident, fugiat dicta? Sunt ducimus neque, animi dolore delectus sequi
+                                voluptas atque iure officiis nostrum ut quis repellendus pariatur veritatis?</p>
+                            <div class="cart-item-stock-code-box">
+                                <span class="sub-title"><strong>Stock Code:</strong> 6CV27</span>
+                            </div>
+                            <div class="cart-item-size-box">
+                                <span class="sub-title"><strong>Size: </strong></span>
+                                <div class="size-box">
+                                    <label class="checkbox-container">
+                                        <input type="checkbox">
+                                        <span class="checkmark">S</span>
+                                    </label>
+                                    <label class="checkbox-container">
+                                        <input type="checkbox">
+                                        <span class="checkmark">M</span>
+                                    </label>
+                                    <label class="checkbox-container">
+                                        <input type="checkbox">
+                                        <span class="checkmark">L</span>
+                                    </label>
+                                    <label class="checkbox-container">
+                                        <input type="checkbox">
+                                        <span class="checkmark">XL</span>
+                                    </label>
+                                    <label class="checkbox-container">
+                                        <input type="checkbox">
+                                        <span class="checkmark">XXL</span>
+                                    </label>
+                                    <label class="checkbox-container">
+                                        <input type="checkbox">
+                                        <span class="checkmark">CUSTOM</span>
+                                    </label>
                                 </div>
-                                <div class="checkout-area">
-                                    <div class="coupon-area">
-                                        <p>Add Coupon Here</p>
-                                        <input type="text" placeholder="XZNSIO234JA">
+                            </div>
+                            <div class="detail-size-box">
+                                <div class="size-item-box">
+                                    <div class="detail-icon-box">
+                                        <img src="./images/icons/bust.png" alt="">
+                                        <p>Chest</p>
                                     </div>
-                                    <div class="checkout-detail">
-                                        <div class="cart-sub-total">
-                                            <p>Cart Subtotal:</p>
-                                            <div class="sub-total-price">
-                                                <span>9,000</span> PKR
-                                            </div>
-                                        </div>
-                                        <div class="delivery-charges">
-                                            <p>Delevery Charges:</p>
-                                            <div class="delivery-charges-price">
-                                                <span>250</span> PKR
-                                            </div>
-                                        </div>
-                                        <div class="total-charges">
-                                            <p>Total:</p>
-                                            <div class="total-charges-price">
-                                                <span>9,250</span> PKR
-                                            </div>
-                                        </div>
-                                        <button class="checkout">Check Out</button>
+                                    <div class="detail-size-value-box">
+                                        <p>35.5</p>
+                                    </div>
+                                </div>
+                                <div class="size-item-box">
+                                    <div class="detail-icon-box">
+                                        <img src="./images/icons/waist.png" alt="">
+                                        <p>Waist</p>
+                                    </div>
+                                    <div class="detail-size-value-box">
+                                        <p>27</p>
+                                    </div>
+                                </div>
+                                <div class="size-item-box">
+                                    <div class="detail-icon-box">
+                                        <img src="./images/icons/Hip.png" alt="">
+                                        <p>Hip</p>
+                                    </div>
+                                    <div class="detail-size-value-box">
+                                        <p>37.5</p>
+                                    </div>
+                                </div>
+                                <div class="size-item-box">
+                                    <div class="detail-icon-box">
+                                        <img src="./images/icons/shirt.png" alt="">
+                                        <p>Shirt Length</p>
+                                    </div>
+                                    <div class="detail-size-value-box">
+                                        <p>37.5</p>
+                                    </div>
+                                </div>
+                                <div class="size-item-box">
+                                    <div class="detail-icon-box">
+                                        <img src="./images/icons/seleves.png" alt="">
+                                        <p>Seleves</p>
+                                    </div>
+                                    <div class="detail-size-value-box">
+                                        <p>35.5</p>
+                                    </div>
+                                </div>
+                                <div class="size-item-box">
+                                    <div class="detail-icon-box">
+                                        <img src="./images/icons/belt.png" alt="">
+                                        <p>Trouser Waist</p>
+                                    </div>
+                                    <div class="detail-size-value-box">
+                                        <p>27</p>
+                                    </div>
+                                </div>
+                                <div class="size-item-box">
+                                    <div class="detail-icon-box">
+                                        <img src="./images/icons/thigh.png" alt="">
+                                        <p>Thighs</p>
+                                    </div>
+                                    <div class="detail-size-value-box">
+                                        <p>37.5</p>
+                                    </div>
+                                </div>
+                                <div class="size-item-box">
+                                    <div class="detail-icon-box">
+                                        <img src="./images/icons/trouser-length.png" alt="">
+                                        <p>Trouser Length</p>
+                                    </div>
+                                    <div class="detail-size-value-box">
+                                        <p>37.5</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
-            </main>
-            <footer id="footer">
-                <div class="container">
-                    <div class="footer-top">
-                        <div class="col">
-                            <img src="./images/footer-logo.png" alt="">
-                            <h4 class="contact-title">Contact Info</h4>
-                            <p class="address">24-A Model Town, Gulberg-v Islamabad, Canal, Pakistan</p>
-                            <p class="phone-number">+92 312 4567890</p>
-                            <p class="email">sales@wearbebaak.com</p>
+            </div>
+            <div class="user-cart-item">
+                <section id="hero-cart-banner">
+                    <div class="container">
+                        <div class="cart-img-box">
+                            <div class="img-container">
+                                <div class="img-box">
+                                    <img src="./images/product1.png" alt="">
+                                    <img src="./images/product.png" alt="">
+                                    <img src="./images/product2.png" alt="">
+                                </div>
+                            </div>
+                            <img src="./images/product.png" alt="">
                         </div>
-                        <div class="col">
-                            <h3 class="footer-top-title">Home</h3>
-                        </div>
-                        <div class="col">
-                            <h3 class="footer-top-title">Products</h3>
-                            <ul>
-                                <li>
-                                    <a href="men-collection.html">Bebaak Men</a>
-                                </li>
-                                <li>
-                                    <a href="women-collection.html">Bebaak Women</a>
-                                </li>
-                                <li>
-                                    <a href="couple-collection.html">Bebaak Couple</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col">
-                            <h3 class="footer-top-title">Lookbook</h3>
-                            <ul>
-                                <li>
-                                    <a href="#">Modles</a>
-                                </li>
-                                <li>
-                                    <a href="#">Brand Tour</a>
-                                </li>
-                                <li>
-                                    <a href="#">Manufacturing</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col">
-                            <h3 class="footer-top-title">Stores</h3>
-                        </div>
-                        <div class="col">
-                            <h3 class="footer-top-title">Support</h3>
+                        <div class="cart-info-box">
+                            <span class="tag">Women's</span>
+                            <span class="selected-product-price">PKR 3500</span>
+                            <h3 class="cart-item-title">Product name | Women wear Bebaak</h3>
+                            <p class="cart-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque,
+                                consectetur. Provident, fugiat dicta? Sunt ducimus neque, animi dolore delectus sequi
+                                voluptas atque iure officiis nostrum ut quis repellendus pariatur veritatis?</p>
+                            <div class="cart-item-stock-code-box">
+                                <span class="sub-title"><strong>Stock Code:</strong> 6CV27</span>
+                            </div>
+                            <div class="cart-item-size-box">
+                                <span class="sub-title"><strong>Size: </strong></span>
+                                <div class="size-box">
+                                    <label class="checkbox-container">
+                                        <input type="checkbox">
+                                        <span class="checkmark">S</span>
+                                    </label>
+                                    <label class="checkbox-container">
+                                        <input type="checkbox">
+                                        <span class="checkmark">M</span>
+                                    </label>
+                                    <label class="checkbox-container">
+                                        <input type="checkbox">
+                                        <span class="checkmark">L</span>
+                                    </label>
+                                    <label class="checkbox-container">
+                                        <input type="checkbox">
+                                        <span class="checkmark">XL</span>
+                                    </label>
+                                    <label class="checkbox-container">
+                                        <input type="checkbox">
+                                        <span class="checkmark">XXL</span>
+                                    </label>
+                                    <label class="checkbox-container">
+                                        <input type="checkbox">
+                                        <span class="checkmark">CUSTOM</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="detail-size-box">
+                                <div class="size-item-box">
+                                    <div class="detail-icon-box">
+                                        <img src="./images/icons/bust.png" alt="">
+                                        <p>Chest</p>
+                                    </div>
+                                    <div class="detail-size-value-box">
+                                        <p>35.5</p>
+                                    </div>
+                                </div>
+                                <div class="size-item-box">
+                                    <div class="detail-icon-box">
+                                        <img src="./images/icons/waist.png" alt="">
+                                        <p>Waist</p>
+                                    </div>
+                                    <div class="detail-size-value-box">
+                                        <p>27</p>
+                                    </div>
+                                </div>
+                                <div class="size-item-box">
+                                    <div class="detail-icon-box">
+                                        <img src="./images/icons/Hip.png" alt="">
+                                        <p>Hip</p>
+                                    </div>
+                                    <div class="detail-size-value-box">
+                                        <p>37.5</p>
+                                    </div>
+                                </div>
+                                <div class="size-item-box">
+                                    <div class="detail-icon-box">
+                                        <img src="./images/icons/shirt.png" alt="">
+                                        <p>Shirt Length</p>
+                                    </div>
+                                    <div class="detail-size-value-box">
+                                        <p>37.5</p>
+                                    </div>
+                                </div>
+                                <div class="size-item-box">
+                                    <div class="detail-icon-box">
+                                        <img src="./images/icons/seleves.png" alt="">
+                                        <p>Seleves</p>
+                                    </div>
+                                    <div class="detail-size-value-box">
+                                        <p>35.5</p>
+                                    </div>
+                                </div>
+                                <div class="size-item-box">
+                                    <div class="detail-icon-box">
+                                        <img src="./images/icons/belt.png" alt="">
+                                        <p>Trouser Waist</p>
+                                    </div>
+                                    <div class="detail-size-value-box">
+                                        <p>27</p>
+                                    </div>
+                                </div>
+                                <div class="size-item-box">
+                                    <div class="detail-icon-box">
+                                        <img src="./images/icons/thigh.png" alt="">
+                                        <p>Thighs</p>
+                                    </div>
+                                    <div class="detail-size-value-box">
+                                        <p>37.5</p>
+                                    </div>
+                                </div>
+                                <div class="size-item-box">
+                                    <div class="detail-icon-box">
+                                        <img src="./images/icons/trouser-length.png" alt="">
+                                        <p>Trouser Length</p>
+                                    </div>
+                                    <div class="detail-size-value-box">
+                                        <p>37.5</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="footer-bottom">
-                        <p class="year">2020</p>
-                        <p class="copyright">copyright Reserved</p>
+                </section>
+            </div>
+            <section id="user-cart-item-detail-box">
+                <div class="container">
+                    <div class="user-cart-detail-title-box">
+                        <h3>Cart Detail</h3>
+                    </div>
+                    <div class="user-cart-item-detail-info">
+                        <div class="cart-item-box">
+                            <div class="cart-item-titile">
+                                <p>There are <span class="item-in-cart">2</span> item in your cart.</p>
+                            </div>
+                            <div class="cart-item-container">
+                                <div class="cart-item-img-box">
+                                    <img src="./images/women-collection-img01.png" alt="">
+                                </div>
+                                <div class="cart-item-detail-box">
+                                    <div class="upper-section">
+                                        <h3>Product Name | Women's wear Bebaak</h3>
+                                    </div>
+                                    <div class="bottom-section">
+                                        <p>Quantity</p>
+                                        <div class="quantitiy-box">
+                                            <div class="counter">
+                                                <span class="button"> - </span>
+                                                <span class="number"> 1 </span>
+                                                <span class="button plus"> + </span>
+                                            </div>
+                                            <p class="total-price">PKR 5500</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-item-container">
+                                <div class="cart-item-img-box">
+                                    <img src="./images/women-collection-img01.png" alt="">
+                                </div>
+                                <div class="cart-item-detail-box">
+                                    <div class="upper-section">
+                                        <h3>Product Name | Women's wear Bebaak</h3>
+                                    </div>
+                                    <div class="bottom-section">
+                                        <p>Quantity</p>
+                                        <div class="quantitiy-box">
+                                            <div class="counter">
+                                                <span class="button"> - </span>
+                                                <span class="number"> 1 </span>
+                                                <span class="button plus"> + </span>
+                                            </div>
+                                            <p class="total-price">PKR 5500</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="check-out">
+                            <div class="checkout-sub-title">
+                                <h4>Ready to be Bebaak</h4>
+                            </div>
+                            <div class="checkout-area">
+                                <div class="coupon-area">
+                                    <p>Add Coupon Here</p>
+                                    <input type="text" placeholder="XZNSIO234JA">
+                                </div>
+                                <div class="checkout-detail">
+                                    <div class="cart-sub-total">
+                                        <p>Cart Subtotal:</p>
+                                        <div class="sub-total-price">
+                                            <span>9,000</span> PKR
+                                        </div>
+                                    </div>
+                                    <div class="delivery-charges">
+                                        <p>Delevery Charges:</p>
+                                        <div class="delivery-charges-price">
+                                            <span>250</span> PKR
+                                        </div>
+                                    </div>
+                                    <div class="total-charges">
+                                        <p>Total:</p>
+                                        <div class="total-charges-price">
+                                            <span>9,250</span> PKR
+                                        </div>
+                                    </div>
+                                    <button class="checkout">Check Out</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </footer>
-        </div>
-        <script src="./lib/jQuery/jquery-3.5.1.min.js"></script>
-        <script src="./lib/owl-carousel/js/owl.carousel.min.js"></script>
-        <script src="./main.js"></script>
-    </body>
+            </section>
+        </main>
+        <footer id="footer">
+            <div class="container">
+                <div class="footer-top">
+                    <div class="col">
+                        <img src="./images/footer-logo.png" alt="">
+                        <h4 class="contact-title">Contact Info</h4>
+                        <p class="address">24-A Model Town, Gulberg-v Islamabad, Canal, Pakistan</p>
+                        <p class="phone-number">+92 312 4567890</p>
+                        <p class="email">sales@wearbebaak.com</p>
+                    </div>
+                    <div class="col">
+                        <h3 class="footer-top-title">Home</h3>
+                    </div>
+                    <div class="col">
+                        <h3 class="footer-top-title">Products</h3>
+                        <ul>
+                            <li>
+                                <a href="men-collection.html">Bebaak Men</a>
+                            </li>
+                            <li>
+                                <a href="women-collection.html">Bebaak Women</a>
+                            </li>
+                            <li>
+                                <a href="couple-collection.html">Bebaak Couple</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3 class="footer-top-title">Lookbook</h3>
+                        <ul>
+                            <li>
+                                <a href="#">Modles</a>
+                            </li>
+                            <li>
+                                <a href="#">Brand Tour</a>
+                            </li>
+                            <li>
+                                <a href="#">Manufacturing</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3 class="footer-top-title">Stores</h3>
+                    </div>
+                    <div class="col">
+                        <h3 class="footer-top-title">Support</h3>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p class="year">2020</p>
+                    <p class="copyright">copyright Reserved</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="./lib/jQuery/jquery-3.5.1.min.js"></script>
+    <script src="./lib/owl-carousel/js/owl.carousel.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+
 </html>
