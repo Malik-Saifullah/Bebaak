@@ -9,7 +9,7 @@ $(function () {
         } else {
             $("header").addClass("top-nav");
             $(".nav-item-dropdown").addClass("dropdown-color");
-            $("header").css("height", "90px");
+            // $("header").css("height", "90px");
         }
     });
 });
@@ -40,6 +40,8 @@ function myFunction() {
 
 function btnToggle() {
     var navToggle = document.getElementById("nav-toggle");
+    // var header = document.getElementById("header");
+    // header.classList.add("nav-toggle");
     if (navToggle.style.display === "none") {
         navToggle.style.display = "block";
     } else {
