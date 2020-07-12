@@ -617,13 +617,135 @@ img {
 =======================================================*/
 .container {
     @include fontNormal;
-
     #Bebaakoverview,
-    #Bebaak-love-to-surve,
-    #Bebaak-policies,
-    #shipment-policy {
+    #Bebaak-love-to-surve {
         margin: 100px auto;
         text-align: center;
+        h3{
+            @include fontBold;
+        }
+        p{
+            // @include fontNormal;
+        }
+    }
+    #Bebaak-policies{
+        h3,h4{
+            @include fontBold;
+            margin-top: 30px;
+        }
+    }
+    #shipment-policy{
+        padding-bottom: 40px;
+        h3{
+            @include fontBold;
+            margin: 40px auto 20px auto;
+        }
+    }
+    #get-in-touch{
+        h3{
+            @include fontBold;
+            text-align: center;
+        }
+        p{
+            text-align: center;
+        }
+        form{
+            margin-top: 50px;
+            max-width: 768px;
+            margin-left: auto;
+            margin-right: auto;
+            input,textarea{
+                padding: 15px 30px;
+                @include fontNormal;
+                border: 2px solid $colorBlack;
+                border-radius: 15px;
+                -webkit-border-radius: 15px;
+                -moz-border-radius: 15px;
+                -ms-border-radius: 15px;
+                -o-border-radius: 15px;
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            .name-field{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                column-gap: 25px;
+                @media(max-width: 500px) {
+                    grid-template-columns: 1fr;
+                    column-gap: 0px;
+                }
+            }
+            .btn-field{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                @media(max-width: 500px) {
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    column-gap: 0px;
+                }
+                button{
+                    @include btncapsule;
+                    @include fontBold;
+                    color: $colorWhite;
+                    background-color: #272727;
+                    text-transform: uppercase;
+                    width: 50%;
+                    padding: 15px 30px;
+                }
+                .icon-box{
+                    @media(max-width: 500px) {
+                        display: flex;
+                        align-items: center;
+                        flex-wrap: wrap;
+                        margin-top: 20px;
+                    }
+                    .social-icon-box {
+                        text-align: right;
+                        display: flex;
+                        .icon {
+                            margin-left: 20px;
+                            i {
+                                cursor: pointer;
+                                font-size: 20px;
+                                padding: 15px;
+                                color: $colorWhite;
+                                background-color: $colorBlack;
+                                width: 50px;
+                                height: 50px;
+                                margin: 10px 0 0;
+                                border-radius: 30px;
+                                -webkit-border-radius: 30px;
+                                -moz-border-radius: 30px;
+                                -ms-border-radius: 30px;
+                                -o-border-radius: 30px;
+                                -webkit-box-shadow: 0px 0px 18px -5px rgba(0, 0, 0, 0.35);
+                                -moz-box-shadow: 0px 0px 18px -5px rgba(0, 0, 0, 0.35);
+                                box-shadow: 0px 0px 18px -5px rgba(0, 0, 0, 0.35);
+                                transition: ease-in-out .5s;
+                                -webkit-transition: ease-in-out .5s;
+                                -moz-transition: ease-in-out .5s;
+                                -ms-transition: ease-in-out .5s;
+                                -o-transition: ease-in-out .5s;
+                                &:hover {
+                                    color: $colorBlack;
+                                    background-color: $colorWhite;
+                                }
+                            }
+                            i.fa-facebook-f {
+                                padding: 17px;
+                            }
+                        }
+                    }
+                    p{
+                        margin: 5px 0;
+                        @media(max-width: 500px) {
+                            padding: 10px 0px 0px 20px;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
