@@ -14,7 +14,6 @@ $(function () {
     });
 });
 
-
 $(window).resize(function () {
     if ($(window).width() < 993) {
         $("header").addClass("top-nav");

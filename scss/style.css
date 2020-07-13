@@ -15,7 +15,9 @@ html {
   scroll-behavior: smooth;
 }
 
-html, body, ul {
+html,
+body,
+ul {
   margin: 0;
   padding: 0;
 }
@@ -109,6 +111,11 @@ img {
   top: 0;
   z-index: 99999;
 }
+@media (min-width: 993px) {
+  #header {
+    height: 76px;
+  }
+}
 @media (max-width: 992px) {
   #header {
     background-color: #fff;
@@ -126,6 +133,9 @@ img {
 }
 @media (max-width: 992px) {
   #header .container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     display: grid;
   }
 }
@@ -134,7 +144,14 @@ img {
   grid-area: 1/1;
 }
 #header .container .logo-box a img {
-  max-width: 100px;
+  max-width: 93px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+@media (max-width: 500px) {
+  #header .container .logo-box a img {
+    max-width: 70px;
+  }
 }
 @media (max-width: 992px) {
   #header .container .navbar {
@@ -149,7 +166,7 @@ img {
 }
 #header .container .navbar .navbar-nav .nav-item {
   float: left;
-  padding: 40px 18px;
+  padding: 26px 18px;
 }
 @media (max-width: 992px) {
   #header .container .navbar .navbar-nav .nav-item {
@@ -203,7 +220,7 @@ img {
 }
 #header .container .cart-option {
   float: right;
-  padding: 40px 0;
+  padding: 26px 0;
 }
 @media (max-width: 992px) {
   #header .container .cart-option {
@@ -242,6 +259,11 @@ img {
 /*=======================================================
         index.html page hero-slider section
 =======================================================*/
+@media (max-width: 500px) {
+  #hero-slider {
+    margin-top: 60px;
+  }
+}
 #hero-slider .img-box {
   position: relative;
 }
@@ -536,16 +558,9 @@ img {
 }
 @media (max-width: 992px) {
   #footer .container .footer-top {
-    grid-template-columns: 3fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     -webkit-column-gap: 20px;
             column-gap: 20px;
-  }
-}
-@media (max-width: 768px) {
-  #footer .container .footer-top {
-    grid-template-columns: 3fr 1fr 1fr;
-    -webkit-column-gap: 10px;
-            column-gap: 10px;
   }
 }
 @media (max-width: 576px) {
@@ -570,7 +585,9 @@ img {
   color: #fff;
   text-transform: capitalize;
 }
-#footer .container .footer-top .col .address, #footer .container .footer-top .col .phone-number, #footer .container .footer-top .col .email {
+#footer .container .footer-top .col .address,
+#footer .container .footer-top .col .phone-number,
+#footer .container .footer-top .col .email {
   color: #fff;
   font-size: 13px;
   font-family: "ITC-Avant-Normal";
@@ -603,6 +620,129 @@ img {
 #footer .container .footer-top .col ul li a:hover {
   text-decoration: underline;
 }
+@media (max-width: 992px) {
+  #footer .container .footer-top .col_1,
+  #footer .container .footer-top .col_2,
+  #footer .container .footer-top .col_3,
+  #footer .container .footer-top .col_4,
+  #footer .container .footer-top .col_5 {
+    display: none;
+  }
+}
+#footer .container .footer-top .col_6 {
+  margin-top: 20px;
+  display: block;
+}
+@media (min-width: 993px) {
+  #footer .container .footer-top .col_6 {
+    display: none;
+  }
+}
+#footer .container .footer-top .col_6 .tabs {
+  overflow: hidden;
+}
+#footer .container .footer-top .col_6 .tabs h3 a {
+  margin: 45px 0 0;
+  color: #fff;
+  font-size: 16px;
+  font-family: "ITC-Avant-Bold";
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.3;
+  text-transform: capitalize;
+}
+#footer .container .footer-top .col_6 .tabs .tab {
+  width: 100%;
+  overflow: hidden;
+}
+#footer .container .footer-top .col_6 .tabs .tab input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+#footer .container .footer-top .col_6 .tabs .tab .tab-label {
+  margin: 0;
+  color: #fff;
+  font-size: 16px;
+  font-family: "ITC-Avant-Bold";
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.3;
+  text-transform: capitalize;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1em;
+  padding-left: 0;
+  cursor: pointer;
+}
+#footer .container .footer-top .col_6 .tabs .tab .tab-label::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f054";
+  font-size: 13px;
+  font-weight: 600;
+  width: 1em;
+  height: 1em;
+  color: #fff;
+  text-align: center;
+  -webkit-transition: all .35s;
+  transition: all .35s;
+  margin-right: 10px;
+}
+#footer .container .footer-top .col_6 .tabs .tab .tab-content {
+  font-size: 13px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  max-height: 0;
+  padding: 0 1em;
+  color: #656260;
+  -webkit-transition: all .35s;
+  transition: all .35s;
+}
+#footer .container .footer-top .col_6 .tabs .tab .tab-content ul li {
+  margin-bottom: 10px;
+}
+#footer .container .footer-top .col_6 .tabs .tab .tab-content ul li a {
+  font-size: 13px;
+  color: #fff;
+  font-family: "ITC-Avant-Normal";
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.3;
+  text-transform: capitalize;
+}
+#footer .container .footer-top .col_6 .tabs .tab .tab-content ul li a:hover {
+  text-decoration: underline;
+}
+#footer .container .footer-top .col_6 .tabs .tab input:checked + .tab-label::before {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+#footer .container .footer-top .col_6 .tabs .tab input:checked ~ .tab-content {
+  max-height: 100vh;
+  padding: 1em;
+  margin-left: 25px;
+}
+#footer .container .footer-top .col_6 .tabs .tab-close {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 1em;
+  font-size: 0.75em;
+  background: #656260;
+  cursor: pointer;
+}
+#footer .container .footer-top .col_6 .tabs .tab-close:hover {
+  background: #4b4947;
+}
 #footer .container .footer-bottom {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -614,7 +754,8 @@ img {
       -ms-flex-align: center;
           align-items: center;
 }
-#footer .container .footer-bottom .year, #footer .container .footer-bottom .copyright {
+#footer .container .footer-bottom .year,
+#footer .container .footer-bottom .copyright {
   font-size: 14px;
   color: #fff;
   margin: 28px 0;

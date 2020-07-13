@@ -1,132 +1,183 @@
 <!DOCTYPE html>
 <html lang="en-US">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <link rel="shortcut icon" href="./images/fav-icon.png" type="image/x-icon">
-        <title>Bebaak</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./scss/main.css">
-    </head>
-    <body>
-        <div class="wrapper">
-            <header id="header" class="header">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="./images/fav-icon.png" type="image/x-icon">
+    <title>Bebaak</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./scss/main.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header id="header" class="header">
+            <div class="container">
+                <div class="logo-box">
+                    <a href="index.html" class="logo">
+                        <img src="./images/header-black-logo.png" alt="logo">
+                    </a>
+                </div>
+                <nav class="navbar" id="nav-toggle">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <span class="nav-link" onclick="myFunction()">
+                                Product
+                                <i class="fas fa-sort-down"></i>
+                            </span>
+                            <div class="dropdown-menu" id="dropdown-toggle">
+                                <a class="dropdown-item" href="men-collection.html">Bebaak men</a>
+                                <a class="dropdown-item" href="women-collection.html">Bebaak women</a>
+                                <a class="dropdown-item" href="couple-collection.html">Bebaak couple</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="lookbook.html" class="nav-link active">Lookbook</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="stores.html" class="nav-link">Stores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="support.html" class="nav-link">Support</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="cart-option">
+                    <i class="fas fa-bars" id="btn-toggle" onclick="btnToggle()"></i>
+                    <i class="fas fa-search"></i>
+                    <i class="fas fa-shopping-cart"></i>
+                    <a href="sign-in.html" class="login-btn">Sign In</a>
+                </div>
+            </div>
+        </header>
+        <main id="main">
+            <section id="gallery">
                 <div class="container">
-                    <div class="logo-box">
-                        <a href="index.html" class="logo">
-                            <img src="./images/header-black-logo.png" alt="logo">
-                        </a>
+                    <img src="./images/lookbook-img01.png" alt="lookbook-img01">
+                    <img src="./images/lookbook-img02.png" alt="lookbook-img02">
+                    <img src="./images/lookbook-img03.png" alt="lookbook-img03">
+                    <img src="./images/lookbook-img04.png" alt="lookbook-img04">
+                    <img src="./images/lookbook-img05.png" alt="lookbook-img05">
+                    <img src="./images/lookbook-img06.png" alt="lookbook-img06">
+                    <img src="./images/lookbook-img07.png" alt="lookbook-img07">
+                    <img src="./images/lookbook-img08.png" alt="lookbook-img08">
+                    <img src="./images/lookbook-img09.png" alt="lookbook-img09">
+                    <img src="./images/lookbook-img10.png" alt="lookbook-img10">
+                    <img src="./images/lookbook-img11.png" alt="lookbook-img11">
+                </div>
+            </section>
+        </main>
+        <footer id="footer">
+            <div class="container">
+                <div class="footer-top">
+                    <div class="col">
+                        <img src="./images/footer-logo.png" alt="">
+                        <h4 class="contact-title">Contact Info</h4>
+                        <p class="address">24-A Model Town, Gulberg-v Islamabad, Canal, Pakistan</p>
+                        <p class="phone-number">+92 312 4567890</p>
+                        <p class="email">sales@wearbebaak.com</p>
                     </div>
-                    <nav class="navbar" id="nav-toggle">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a href="index.html" class="nav-link">Home</a>
+                    <div class="col col_1">
+                        <h3 class="footer-top-title">Home</h3>
+                    </div>
+                    <div class="col col_2">
+                        <h3 class="footer-top-title">Products</h3>
+                        <ul>
+                            <li>
+                                <a href="men-collection.html">Bebaak Men</a>
                             </li>
-                            <li class="nav-item">
-                                <span class="nav-link" onclick="myFunction()">
-                                    Product
-                                    <i class="fas fa-sort-down"></i>
-                                </span>
-                                <div class="dropdown-menu" id="dropdown-toggle">
-                                    <a class="dropdown-item" href="men-collection.html">Bebaak men</a>
-                                    <a class="dropdown-item" href="women-collection.html">Bebaak women</a>
-                                    <a class="dropdown-item" href="couple-collection.html">Bebaak couple</a>
-                                </div>
+                            <li>
+                                <a href="women-collection.html">Bebaak Women</a>
                             </li>
-                            <li class="nav-item">
-                                <a href="lookbook.html" class="nav-link active">Lookbook</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="stores.html" class="nav-link">Stores</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="support.html" class="nav-link">Support</a>
+                            <li>
+                                <a href="couple-collection.html">Bebaak Couple</a>
                             </li>
                         </ul>
-                    </nav>
-                    <div class="cart-option">
-                        <i class="fas fa-bars" id="btn-toggle" onclick="btnToggle()"></i>
-                        <i class="fas fa-search"></i>
-                        <i class="fas fa-shopping-cart"></i>
-                        <a href="sign-in.html" class="login-btn">Sign In</a>
+                    </div>
+                    <div class="col col_3">
+                        <h3 class="footer-top-title">Lookbook</h3>
+                        <ul>
+                            <li>
+                                <a href="#">Modles</a>
+                            </li>
+                            <li>
+                                <a href="#">Brand Tour</a>
+                            </li>
+                            <li>
+                                <a href="#">Manufacturing</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col col_4">
+                        <h3 class="footer-top-title">Stores</h3>
+                    </div>
+                    <div class="col col_5">
+                        <h3 class="footer-top-title">Support</h3>
+                    </div>
+                    <!-- This div shown on small screen -->
+                    <div class="col_6">
+                        <div class="tabs">
+                            <h3 class="footer-top-title">
+                                <a href="index.html">Home</a>
+                            </h3>
+                            <div class="tab">
+                                <input type="checkbox" id="chck1">
+                                <label class="tab-label" for="chck1">Bebaak Products</label>
+                                <div class="tab-content">
+                                    <ul>
+                                        <li>
+                                            <a href="men-collection.html">Bebaak Men</a>
+                                        </li>
+                                        <li>
+                                            <a href="women-collection.html">Bebaak Women</a>
+                                        </li>
+                                        <li>
+                                            <a href="couple-collection.html">Bebaak Couple</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tab">
+                                <input type="checkbox" id="chck2">
+                                <label class="tab-label" for="chck2">Lookbook</label>
+                                <div class="tab-content">
+                                    <ul>
+                                        <li>
+                                            <a href="#">Modles</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Brand Tour</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Manufacturing</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h3 class="footer-top-title">
+                                <a href="stores.html">Stores</a>
+                            </h3>
+                            <h3 class="footer-top-title">
+                                <a href="support.html">Support</a>
+                            </h3>
+                        </div>
                     </div>
                 </div>
-            </header>
-            <main id="main">
-                <section id="gallery">
-                    <div class="container">
-                        <img src="./images/lookbook-img01.png" alt="lookbook-img01">
-                        <img src="./images/lookbook-img02.png" alt="lookbook-img02">
-                        <img src="./images/lookbook-img03.png" alt="lookbook-img03">
-                        <img src="./images/lookbook-img04.png" alt="lookbook-img04">
-                        <img src="./images/lookbook-img05.png" alt="lookbook-img05">
-                        <img src="./images/lookbook-img06.png" alt="lookbook-img06">
-                        <img src="./images/lookbook-img07.png" alt="lookbook-img07">
-                        <img src="./images/lookbook-img08.png" alt="lookbook-img08">
-                        <img src="./images/lookbook-img09.png" alt="lookbook-img09">
-                        <img src="./images/lookbook-img10.png" alt="lookbook-img10">
-                        <img src="./images/lookbook-img11.png" alt="lookbook-img11">
-                    </div>
-                </section>
-            </main>
-            <footer id="footer">
-                <div class="container">
-                    <div class="footer-top">
-                        <div class="col">
-                            <img src="./images/footer-logo.png" alt="">
-                            <h4 class="contact-title">Contact Info</h4>
-                            <p class="address">24-A Model Town, Gulberg-v Islamabad, Canal, Pakistan</p>
-                            <p class="phone-number">+92 312 4567890</p>
-                            <p class="email">sales@wearbebaak.com</p>
-                        </div>
-                        <div class="col">
-                            <h3 class="footer-top-title">Home</h3>
-                        </div>
-                        <div class="col">
-                            <h3 class="footer-top-title">Products</h3>
-                            <ul>
-                                <li>
-                                    <a href="men-collection.html">Bebaak Men</a>
-                                </li>
-                                <li>
-                                    <a href="women-collection.html">Bebaak Women</a>
-                                </li>
-                                <li>
-                                    <a href="couple-collection.html">Bebaak Couple</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col">
-                            <h3 class="footer-top-title">Lookbook</h3>
-                            <ul>
-                                <li>
-                                    <a href="#">Modles</a>
-                                </li>
-                                <li>
-                                    <a href="#">Brand Tour</a>
-                                </li>
-                                <li>
-                                    <a href="#">Manufacturing</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col">
-                            <h3 class="footer-top-title">Stores</h3>
-                        </div>
-                        <div class="col">
-                            <h3 class="footer-top-title">Support</h3>
-                        </div>
-                    </div>
-                    <div class="footer-bottom">
-                        <p class="year">2020</p>
-                        <p class="copyright">copyright Reserved</p>
-                    </div>
+                <div class="footer-bottom">
+                    <p class="year">2020</p>
+                    <p class="copyright">copyright Reserved</p>
                 </div>
-            </footer>
-        </div>
-        <script src="./lib/jQuery/jquery-3.5.1.min.js"></script>
-        <script src="./lib/owl-carousel/js/owl.carousel.min.js"></script>
-        <script src="./main.js"></script>
-    </body>
+            </div>
+        </footer>
+    </div>
+    <script src="./lib/jQuery/jquery-3.5.1.min.js"></script>
+    <script src="./lib/owl-carousel/js/owl.carousel.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+
 </html>
