@@ -191,14 +191,16 @@ img {
                         display: none;
                         background-color: $colorWhite;
                         padding: 17px 20px 20px;
-                        border-radius: 0 0 10px 5px;
-                        -webkit-border-radius: 0 0 10px 5px;
-                        -moz-border-radius: 0 0 10px 5px;
-                        -ms-border-radius: 0 0 10px 5px;
-                        -o-border-radius: 0 0 10px 5px;
-                        -webkit-box-shadow: 13px 18px 18px -10px rgba(0, 0, 0, 0.35);
-                        -moz-box-shadow: 13px 18px 18px -10px rgba(0, 0, 0, 0.35);
-                        box-shadow: 13px 18px 18px -10px rgba(0, 0, 0, 0.35);
+                        @media(min-width: 993px){
+                            border-radius: 0 0 10px 5px;
+                            -webkit-border-radius: 0 0 10px 5px;
+                            -moz-border-radius: 0 0 10px 5px;
+                            -ms-border-radius: 0 0 10px 5px;
+                            -o-border-radius: 0 0 10px 5px;
+                            -webkit-box-shadow: 13px 18px 18px -10px rgba(0, 0, 0, 0.35);
+                            -moz-box-shadow: 13px 18px 18px -10px rgba(0, 0, 0, 0.35);
+                            box-shadow: 13px 18px 18px -10px rgba(0, 0, 0, 0.35);
+                        }
 
                         .dropdown-item {
                             display: block;
@@ -645,10 +647,6 @@ img {
 
             h3 {
                 @include fontBold;
-            }
-
-            p {
-                // @include fontNormal;
             }
         }
 
