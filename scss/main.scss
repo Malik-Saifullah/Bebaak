@@ -397,60 +397,76 @@ img {
             column-gap: 0;
         }
 
-        .cart-img-box {
+        .col-lg-6 {
             display: grid;
             grid-template-columns: 100px 1fr;
-
-            .img-container {
-                border-right: 2px solid $colorBlack;
+            column-gap: 20px;
+            .product-thumbs{
+                // overflow: hidden;
+                outline: none;
                 position: relative;
                 padding-top: 80px;
                 padding-bottom: 80px;
                 max-height: 560px;
-                overflow: hidden;
-
-                &::before {
-                    content: '';
-                    position: absolute;
-                    width: 100%;
-                    height: 80px;
-                    background: linear-gradient(to bottom, #fff 0, rgba(255, 255, 255, 0) 100%);
-                    top: 0;
-                    z-index: 1;
-                }
-
-                .img-box {
-                    position: absolute;
-                    top: 50%;
-                    transform: translate(0%, -50%);
-                    -webkit-transform: translate(0%, -50%);
-                    -moz-transform: translate(0%, -50%);
-                    -ms-transform: translate(0%, -50%);
-                    -o-transform: translate(0%, -50%);
-
-                    // display: flex;
-                    // flex-direction: column;
-                    // justify-content: center;
-                    // align-items: center;
-                    img {
-                        padding: 10px 5px;
-                        max-width: 100px;
-                        cursor: pointer;
+                // z-index: 9999;
+                .product-thumbs-track{
+                    border-right: 2px solid $colorBlack;
+                    padding-right: 20px;
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        width: 100%;
+                        height: 80px;
+                        background: linear-gradient(to bottom, #fff 0, rgba(255, 255, 255, 0) 100%);
+                        top: 0;
+                        z-index: 999;
+                    }
+                    .pt{
+                        margin: 20px 0;
+                        padding: 20px;
+                        border: 2px solid transparent;
+                        img{
+                            cursor: pointer;
+                        }
+                    }
+                    .pt.active{
+                        border: 2px solid red;
+                        display: flex;
+                        align-items: center;
+                        &::after{
+                            content: '';
+                            position: absolute;
+                            width: 23px;
+                            height: 5px;
+                            right: -10px;
+                            // top: 375px;
+                            background-color: red;
+                        }
+                    }
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        width: 100%;
+                        height: 80px;
+                        background: linear-gradient(to top, #fff 0, rgba(255, 255, 255, 0) 100%);
+                        bottom: 0;
+                        z-index: 999;
                     }
                 }
-
-                &::after {
-                    content: '';
-                    position: absolute;
-                    width: 100%;
-                    height: 80px;
-                    background: linear-gradient(to top, #fff 0, rgba(255, 255, 255, 0) 100%);
-                    bottom: 0;
-                }
             }
-
-            img {
-                cursor: pointer;
+            .product-pic-zoom {
+                position: relative; overflow: hidden;
+                .zoomImg {
+                    position: absolute;
+                    top: -549.267px;
+                    left: -383.368px;
+                    opacity: 0;
+                    border: none;
+                    max-width: none;
+                    max-height: none;
+                    width: 1000px;
+                    height: 1358px;
+                }
             }
         }
 
@@ -705,6 +721,25 @@ img {
 
             h3 {
                 @include fontBold;
+                font-size: 24px;
+            }
+            p{
+                font-size: 18px;
+            }
+            .whatsapp-number{
+                margin: auto;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img{
+                    max-width: 50px;
+                }
+                a{
+                    font-size: 18px;
+                    margin-left: 15px;
+                    color: $colorBlack;
+                }
             }
         }
 
@@ -715,29 +750,42 @@ img {
                 @include fontBold;
                 margin-top: 30px;
             }
+            h3{
+                font-size: 24px;
+            }
+            h4{
+                font-size: 18px;
+            }
         }
 
         #shipment-policy {
             padding-bottom: 40px;
 
             h3 {
+                font-size: 18px;
                 @include fontBold;
                 margin: 40px auto 20px auto;
+            }
+            p{
+                font-size: 18px;
             }
         }
 
         #get-in-touch {
             h3 {
+                font-size: 24px;
                 @include fontBold;
                 text-align: center;
             }
 
             p {
+                font-size: 18px;
                 text-align: center;
             }
 
             form {
                 margin-top: 50px;
+                margin-bottom: 50px;
                 max-width: 768px;
                 margin-left: auto;
                 margin-right: auto;
@@ -806,11 +854,11 @@ img {
                                 i {
                                     cursor: pointer;
                                     font-size: 20px;
-                                    padding: 15px;
+                                    padding: 12px;
                                     color: $colorWhite;
                                     background-color: $colorBlack;
-                                    width: 50px;
-                                    height: 50px;
+                                    width: 40px;
+                                    height: 40px;
                                     margin: 10px 0 0;
                                     border-radius: 30px;
                                     -webkit-border-radius: 30px;
@@ -831,14 +879,11 @@ img {
                                         background-color: $colorWhite;
                                     }
                                 }
-
-                                i.fa-facebook-f {
-                                    padding: 17px;
-                                }
                             }
                         }
 
                         p {
+                            font-size: 12px;
                             margin: 5px 0;
 
                             @media(max-width: 500px) {

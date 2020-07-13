@@ -393,19 +393,24 @@ img {
             column-gap: 0;
   }
 }
-#hero-cart-banner .container .cart-img-box {
+#hero-cart-banner .container .col-lg-6 {
   display: grid;
   grid-template-columns: 100px 1fr;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
 }
-#hero-cart-banner .container .cart-img-box .img-container {
-  border-right: 2px solid #272727;
+#hero-cart-banner .container .col-lg-6 .product-thumbs {
+  outline: none;
   position: relative;
   padding-top: 80px;
   padding-bottom: 80px;
   max-height: 560px;
-  overflow: hidden;
 }
-#hero-cart-banner .container .cart-img-box .img-container::before {
+#hero-cart-banner .container .col-lg-6 .product-thumbs .product-thumbs-track {
+  border-right: 2px solid #272727;
+  padding-right: 20px;
+}
+#hero-cart-banner .container .col-lg-6 .product-thumbs .product-thumbs-track::before {
   content: '';
   position: absolute;
   width: 100%;
@@ -413,23 +418,34 @@ img {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), to(rgba(255, 255, 255, 0)));
   background: linear-gradient(to bottom, #fff 0, rgba(255, 255, 255, 0) 100%);
   top: 0;
-  z-index: 1;
+  z-index: 999;
 }
-#hero-cart-banner .container .cart-img-box .img-container .img-box {
-  position: absolute;
-  top: 50%;
-  transform: translate(0%, -50%);
-  -webkit-transform: translate(0%, -50%);
-  -moz-transform: translate(0%, -50%);
-  -ms-transform: translate(0%, -50%);
-  -o-transform: translate(0%, -50%);
+#hero-cart-banner .container .col-lg-6 .product-thumbs .product-thumbs-track .pt {
+  margin: 20px 0;
+  padding: 20px;
+  border: 2px solid transparent;
 }
-#hero-cart-banner .container .cart-img-box .img-container .img-box img {
-  padding: 10px 5px;
-  max-width: 100px;
+#hero-cart-banner .container .col-lg-6 .product-thumbs .product-thumbs-track .pt img {
   cursor: pointer;
 }
-#hero-cart-banner .container .cart-img-box .img-container::after {
+#hero-cart-banner .container .col-lg-6 .product-thumbs .product-thumbs-track .pt.active {
+  border: 2px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#hero-cart-banner .container .col-lg-6 .product-thumbs .product-thumbs-track .pt.active::after {
+  content: '';
+  position: absolute;
+  width: 23px;
+  height: 5px;
+  right: -10px;
+  background-color: red;
+}
+#hero-cart-banner .container .col-lg-6 .product-thumbs .product-thumbs-track::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -437,9 +453,22 @@ img {
   background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #fff), to(rgba(255, 255, 255, 0)));
   background: linear-gradient(to top, #fff 0, rgba(255, 255, 255, 0) 100%);
   bottom: 0;
+  z-index: 999;
 }
-#hero-cart-banner .container .cart-img-box img {
-  cursor: pointer;
+#hero-cart-banner .container .col-lg-6 .product-pic-zoom {
+  position: relative;
+  overflow: hidden;
+}
+#hero-cart-banner .container .col-lg-6 .product-pic-zoom .zoomImg {
+  position: absolute;
+  top: -549.267px;
+  left: -383.368px;
+  opacity: 0;
+  border: none;
+  max-width: none;
+  max-height: none;
+  width: 1000px;
+  height: 1358px;
 }
 #hero-cart-banner .container .cart-info-box {
   padding-top: 30px;
@@ -699,6 +728,35 @@ img {
   font-weight: 700;
   font-style: normal;
   line-height: 1.3;
+  font-size: 24px;
+}
+.support-page .container #Bebaakoverview p,
+.support-page .container #Bebaak-love-to-surve p {
+  font-size: 18px;
+}
+.support-page .container #Bebaakoverview .whatsapp-number,
+.support-page .container #Bebaak-love-to-surve .whatsapp-number {
+  margin: auto;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.support-page .container #Bebaakoverview .whatsapp-number img,
+.support-page .container #Bebaak-love-to-surve .whatsapp-number img {
+  max-width: 50px;
+}
+.support-page .container #Bebaakoverview .whatsapp-number a,
+.support-page .container #Bebaak-love-to-surve .whatsapp-number a {
+  font-size: 18px;
+  margin-left: 15px;
+  color: #272727;
 }
 .support-page .container #Bebaak-policies h3,
 .support-page .container #Bebaak-policies h4 {
@@ -708,17 +766,28 @@ img {
   line-height: 1.3;
   margin-top: 30px;
 }
+.support-page .container #Bebaak-policies h3 {
+  font-size: 24px;
+}
+.support-page .container #Bebaak-policies h4 {
+  font-size: 18px;
+}
 .support-page .container #shipment-policy {
   padding-bottom: 40px;
 }
 .support-page .container #shipment-policy h3 {
+  font-size: 18px;
   font-family: "ITC-Avant-Bold";
   font-weight: 700;
   font-style: normal;
   line-height: 1.3;
   margin: 40px auto 20px auto;
 }
+.support-page .container #shipment-policy p {
+  font-size: 18px;
+}
 .support-page .container #get-in-touch h3 {
+  font-size: 24px;
   font-family: "ITC-Avant-Bold";
   font-weight: 700;
   font-style: normal;
@@ -726,10 +795,12 @@ img {
   text-align: center;
 }
 .support-page .container #get-in-touch p {
+  font-size: 18px;
   text-align: center;
 }
 .support-page .container #get-in-touch form {
   margin-top: 50px;
+  margin-bottom: 50px;
   max-width: 768px;
   margin-left: auto;
   margin-right: auto;
@@ -837,11 +908,11 @@ img {
 .support-page .container #get-in-touch form .btn-field .icon-box .social-icon-box .icon i {
   cursor: pointer;
   font-size: 20px;
-  padding: 15px;
+  padding: 12px;
   color: #fff;
   background-color: #272727;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   margin: 10px 0 0;
   border-radius: 30px;
   -webkit-border-radius: 30px;
@@ -860,10 +931,8 @@ img {
   color: #272727;
   background-color: #fff;
 }
-.support-page .container #get-in-touch form .btn-field .icon-box .social-icon-box .icon i.fa-facebook-f {
-  padding: 17px;
-}
 .support-page .container #get-in-touch form .btn-field .icon-box p {
+  font-size: 12px;
   margin: 5px 0;
 }
 @media (max-width: 500px) {

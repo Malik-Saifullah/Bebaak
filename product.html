@@ -49,14 +49,14 @@
                 </nav>
                 <div class="cart-option">
                     <i class="fas fa-bars" id="btn-toggle" onclick="btnToggle()"></i>
-                    <i class="fas fa-search"></i>
+                    <i class="fas fa-search" onclick="searchBar()"></i>
                     <i class="fas fa-shopping-cart"></i>
                     <a href="sign-in.html" class="login-btn">Sign In</a>
                 </div>
             </div>
-            <div id="search" class="collapse show" style="">
+            <div id="search" class="collapse">
                 <div class="container">
-                    <form role="search" class="">
+                    <form role="search">
                         <div class="input-group">
                             <div class="input-group-append">
                                 <input type="text" placeholder="Search" class="form-control">
@@ -70,15 +70,24 @@
         <main id="main">
             <section id="hero-cart-banner">
                 <div class="container">
-                    <div class="cart-img-box">
-                        <div class="img-container">
-                            <div class="img-box">
-                                <img src="./images/product1.png" alt="">
-                                <img src="./images/product.png" alt="">
-                                <img src="./images/product2.png" alt="">
+                    <div class="col-lg-6">
+                        <div class="product-thumbs" tabindex="1">
+                            <div class="product-thumbs-track">
+                                <div class="pt" data-imgbigurl="./images/product.png">
+                                    <img src="./images/product.png" alt="">
+                                </div>
+                                <div class="pt" data-imgbigurl="./images/product1.png">
+                                    <img src="./images/product1.png" alt="">
+                                </div>
+                                <div class="pt" data-imgbigurl="./images/product2.png">
+                                    <img src="./images/product2.png" alt="">
+                                </div>
                             </div>
                         </div>
-                        <img src="./images/product.png" alt="">
+                        <div class="product-pic-zoom">
+                            <img class="product-big-img" src="./images/product.png" alt="">
+                            <img role="presentation" alt="" src="./images/product.png" class="zoomImg">
+                        </div>
                     </div>
                     <div class="cart-info-box">
                         <span class="tag">Women</span>
@@ -495,6 +504,7 @@
     </div>
     <script src="./lib/jQuery/jquery-3.5.1.min.js"></script>
     <script src="./lib/owl-carousel/js/owl.carousel.min.js"></script>
+    <script src="./lib/jQuery-zoom/jquery.zoom.min.js"></script>
     <script src="./main.js"></script>
 </body>
 

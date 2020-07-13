@@ -49,14 +49,14 @@
                 </nav>
                 <div class="cart-option">
                     <i class="fas fa-bars" id="btn-toggle" onclick="btnToggle()"></i>
-                    <i class="fas fa-search"></i>
+                    <i class="fas fa-search" onclick="searchBar()"></i>
                     <i class="fas fa-shopping-cart"></i>
                     <a href="sign-in.html" class="login-btn">Sign In</a>
                 </div>
             </div>
-            <div id="search" class="collapse show" style="">
+            <div id="search" class="collapse">
                 <div class="container">
-                    <form role="search" class="">
+                    <form role="search">
                         <div class="input-group">
                             <div class="input-group-append">
                                 <input type="text" placeholder="Search" class="form-control">
@@ -118,10 +118,11 @@
                         <p>Our quality and customer service makes sure that your experience with us will be amazing
                             and our products are exceptional,
                             but for any reason or even without a reason if you would like to return or exchange your
-                            order,
-                            just Whatsapp us.
-                            <P> +923012345678 </P>
-                            <P> www.wearbebaak.com </p>
+                            order, just Whatsapp us.
+                        <div class="whatsapp-number">
+                            <img src="./images/icons/whatsapp.png" alt="">
+                            <a href="#" target="_blank"> +923012345678 </a>
+                        </div>
                     </div>
                 </section>
                 <section id="Bebaak-policies">
@@ -164,12 +165,16 @@
                             <button>Submit</button>
                             <div class="icon-box">
                                 <div class="social-icon-box">
-                                    <div class="icon">
-                                        <i class="fab fa-facebook-f"></i>
-                                    </div>
-                                    <div class="icon">
-                                        <i class="fab fa-instagram"></i>
-                                    </div>
+                                    <a href="https://facebook.com/wearbebaak/" target="_blank">
+                                        <div class="icon">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </div>
+                                    </a>
+                                    <a href="https://www.instagram.com/wearbebaak/" target="_blank">
+                                        <div class="icon">
+                                            <i class="fab fa-instagram"></i>
+                                        </div>
+                                    </a>
                                 </div>
                                 <p>Join our Community</p>
                             </div>
