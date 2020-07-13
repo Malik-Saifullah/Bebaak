@@ -28,23 +28,21 @@ $(function () {
     });
 });
 
-function myFunction() {
-    var dropdown = document.getElementById("dropdown-toggle");
-    if (dropdown.style.display === "none") {
-        dropdown.style.display = "block";
+function btnToggle() {
+    var x = document.getElementById("nav-toggle");
+    if (x.style.display === "none") {
+        x.style.display = "block";
     } else {
-        dropdown.style.display = "none";
+        x.style.display = "none";
     }
 }
 
-function btnToggle() {
-    var navToggle = document.getElementById("nav-toggle");
-    // var header = document.getElementById("header");
-    // header.classList.add("nav-toggle");
-    if (navToggle.style.display === "none") {
-        navToggle.style.display = "block";
+function myFunction() {
+    var x = document.getElementById("dropdown-toggle");
+    if (x.style.display === "none") {
+        x.style.display = "block";
     } else {
-        navToggle.style.display = "none";
+        x.style.display = "none";
     }
 }
 
@@ -115,6 +113,15 @@ function selectedIcon() {
 // }
 
 
-$('.product-name-icon').on('click', function() {
+$('.product-name-icon').on('click', function () {
     $('i', this).toggleClass('far fas');
 });
+
+function searchBar() {
+    var x = document.getElementById("search");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
