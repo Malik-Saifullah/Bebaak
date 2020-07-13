@@ -543,8 +543,12 @@ img {
                     background-color: transparent;
                     border: 2px solid red;
                     margin-right: 5px;
-
-                    .btn-bold {
+                    transition: .5s ease-in-out;
+                    -webkit-transition: .5s ease-in-out;
+                    -moz-transition: .5s ease-in-out;
+                    -ms-transition: .5s ease-in-out;
+                    -o-transition: .5s ease-in-out;
+                    .btn-bold{
                         font-weight: 800;
                     }
 
@@ -565,7 +569,6 @@ img {
 
         .social-icon-container {
             position: absolute;
-            left: 0;
             right: 0;
             bottom: 0;
             z-index: 9999;

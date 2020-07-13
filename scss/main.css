@@ -546,6 +546,11 @@ img {
   background-color: transparent;
   border: 2px solid red;
   margin-right: 5px;
+  transition: .5s ease-in-out;
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -ms-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
 }
 #hero-cart-banner .container .cart-info-box .cart-item-btn-box .cart-btn-price .btn-bold {
   font-weight: 800;
@@ -562,7 +567,6 @@ img {
 }
 #hero-cart-banner .container .social-icon-container {
   position: absolute;
-  left: 0;
   right: 0;
   bottom: 0;
   z-index: 9999;
