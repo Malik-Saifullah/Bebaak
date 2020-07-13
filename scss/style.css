@@ -401,6 +401,9 @@ img {
   margin: 5px;
   cursor: pointer;
 }
+.product-container .product__ .product-info-box .product-name-icon i.fas {
+  color: red;
+}
 .product-container .product__ .product-info-box .info-inner-box {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -113,3 +113,8 @@ function selectedIcon() {
 //         selectIcon.style.display = "block";
 //     }
 // }
+
+
+$('.product-name-icon').on('click', function() {
+    $('i', this).toggleClass('far fas');
+});

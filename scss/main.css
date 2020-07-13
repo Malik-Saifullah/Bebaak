@@ -1318,8 +1318,7 @@ img {
   margin: 5px;
   cursor: pointer;
 }
-.product-container .product__ .product-info-box .product-name-icon #selected-icon {
-  display: none;
+.product-container .product__ .product-info-box .product-name-icon i.fas {
   color: red;
 }
 .product-container .product__ .product-info-box .info-inner-box {
