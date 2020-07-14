@@ -859,7 +859,7 @@ img {
             column-gap: 0px;
   }
 }
-.support-page .container #get-in-touch form .btn-field .button {
+.support-page .container #get-in-touch form .btn-field button {
   cursor: pointer;
   border: 2px solid #272727;
   border-radius: 30px;
@@ -885,7 +885,7 @@ img {
   width: 50%;
   padding: 15px 30px;
 }
-.support-page .container #get-in-touch form .btn-field .button:hover {
+.support-page .container #get-in-touch form .btn-field button:hover {
   color: #272727;
   background-color: transparent;
   border: 2px solid #272727;

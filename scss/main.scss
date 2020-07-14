@@ -850,7 +850,7 @@ img {
                         column-gap: 0px;
                     }
 
-                    .button {
+                    button {
                         cursor: pointer;
                         @include btncapsule;
                         @include fontBold;
