@@ -401,17 +401,20 @@ img {
             display: grid;
             grid-template-columns: 100px 1fr;
             column-gap: 20px;
-            .product-thumbs{
+
+            .product-thumbs {
                 // overflow: hidden;
                 outline: none;
                 position: relative;
                 padding-top: 80px;
                 padding-bottom: 80px;
                 max-height: 560px;
+
                 // z-index: 9999;
-                .product-thumbs-track{
+                .product-thumbs-track {
                     border-right: 2px solid $colorBlack;
                     padding-right: 20px;
+
                     &::before {
                         content: '';
                         position: absolute;
@@ -421,19 +424,23 @@ img {
                         top: 0;
                         z-index: 999;
                     }
-                    .pt{
+
+                    .pt {
                         margin: 20px 0;
                         padding: 20px;
                         border: 2px solid transparent;
-                        img{
+
+                        img {
                             cursor: pointer;
                         }
                     }
-                    .pt.active{
+
+                    .pt.active {
                         border: 2px solid red;
                         display: flex;
                         align-items: center;
-                        &::after{
+
+                        &::after {
                             content: '';
                             position: absolute;
                             width: 23px;
@@ -443,6 +450,7 @@ img {
                             background-color: red;
                         }
                     }
+
                     &::after {
                         content: '';
                         position: absolute;
@@ -454,8 +462,11 @@ img {
                     }
                 }
             }
+
             .product-pic-zoom {
-                position: relative; overflow: hidden;
+                position: relative;
+                overflow: hidden;
+
                 .zoomImg {
                     position: absolute;
                     top: -549.267px;
@@ -723,19 +734,23 @@ img {
                 @include fontBold;
                 font-size: 24px;
             }
-            p{
+
+            p {
                 font-size: 18px;
             }
-            .whatsapp-number{
+
+            .whatsapp-number {
                 margin: auto;
                 text-align: center;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                img{
+
+                img {
                     max-width: 50px;
                 }
-                a{
+
+                a {
                     font-size: 18px;
                     margin-left: 15px;
                     color: $colorBlack;
@@ -750,10 +765,12 @@ img {
                 @include fontBold;
                 margin-top: 30px;
             }
-            h3{
+
+            h3 {
                 font-size: 24px;
             }
-            h4{
+
+            h4 {
                 font-size: 18px;
             }
         }
@@ -766,7 +783,8 @@ img {
                 @include fontBold;
                 margin: 40px auto 20px auto;
             }
-            p{
+
+            p {
                 font-size: 18px;
             }
         }
@@ -1051,7 +1069,10 @@ img {
                                 }
 
                                 .number {
-                                    padding: 5px 20px;
+                                    text-align: center;
+                                    width: 60px;
+                                    padding: 5px;
+                                    border: 0;
                                     margin-left: 5px;
                                     margin-right: 5px;
                                 }
