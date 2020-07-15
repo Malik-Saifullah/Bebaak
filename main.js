@@ -63,56 +63,6 @@ $(document).ready(function () {
     });
 });
 
-/*=======================================================
-                    product section
-=======================================================*/
-// $(function () {
-//     $(".product-info-box .product-name-icon i").on("click touch", function () {
-//         $(this).find('i').toggle('#select-icon #selected-icon');
-//     });
-// });
-
-// $(function () {
-//     $(".product-info-box .product-name-icon i").on("click touch", function () {
-//         var selectIcon = document.getElementById("select-icon");
-//         var selectedIcon = document.getElementById("selected-icon");
-//         if (selectedIcon.style.display === "none") {
-//             selectedIcon.display = "block";
-//             selectIcon.style.display = "none";
-//         } else {
-//             selectedIcon.style.display = "none";
-//             selectIcon.style.display = "block";
-//         }
-//     });
-// });
-
-function selectIcon() {
-    var selectIcon = document.getElementById("select-icon");
-    var selectedIcon = document.getElementById("selected-icon");
-    selectIcon.style.display = "none";
-    selectedIcon.style.display = "block";
-}
-
-function selectedIcon() {
-    var selectIcon = document.getElementById("select-icon");
-    var selectedIcon = document.getElementById("selected-icon");
-    selectedIcon.style.display = "none";
-    selectIcon.style.display = "block";
-}
-
-// function selectIcon() {
-//     var selectIcon = document.getElementById("select-icon");
-//     var selectedIcon = document.getElementById("selected-icon");
-//     if (selectedIcon.style.display === "none") {
-//         selectedIcon.display = "block";
-//         selectIcon.style.display = "none";
-//     } else {
-//         selectedIcon.style.display = "none";
-//         selectIcon.style.display = "block";
-//     }
-// }
-
-
 $('.product-name-icon').on('click', function () {
     $('i', this).toggleClass('far fas');
 });
@@ -125,8 +75,6 @@ function searchBar() {
         x.style.display = "none";
     }
 }
-
-
 
 $('.product-thumbs-track > .pt').on('click', function () {
     $('.product-thumbs-track .pt').removeClass('active');
@@ -143,7 +91,6 @@ $('.product-thumbs-track > .pt').on('click', function () {
     }
 });
 $('.product-pic-zoom').zoom();
-
 
 /*----------------------
     Quantity change
@@ -167,3 +114,8 @@ proQty.on('click', '.qtybtn', function () {
     }
     $button.parent().find('input').val(newVal);
 });
+
+function removeSection(){
+    var myobj = document.getElementById("cart__item__");
+    myobj.remove();
+}

@@ -70,9 +70,12 @@
             </div>
         </header>
         <main id="main">
-            <div class="user-cart-item">
+            <div class="user-cart-item" id="cart__item__" onclick="removeSection()">
                 <section id="hero-cart-banner">
                     <div class="container">
+                        <div class="btn-remove">
+                            <i class="fas fa-times"></i>
+                        </div>
                         <div class="col-lg-6">
                             <div class="product-thumbs" tabindex="1">
                                 <div class="product-thumbs-track">
@@ -209,9 +212,12 @@
                     </div>
                 </section>
             </div>
-            <div class="user-cart-item">
+            <div class="user-cart-item" id="cart__item__" onclick="removeSection()">
                 <section id="hero-cart-banner">
                     <div class="container">
+                        <div class="btn-remove" id="btnRemove">
+                            <i class="fas fa-times"></i>
+                        </div>
                         <div class="col-lg-6">
                             <div class="product-thumbs" tabindex="1">
                                 <div class="product-thumbs-track">
@@ -358,7 +364,7 @@
                             <div class="cart-item-titile">
                                 <p>There are <span class="item-in-cart">2</span> item in your cart.</p>
                             </div>
-                            <div class="cart-item-container">
+                            <div class="cart-item-container" id="cart__item__clone__1">
                                 <div class="cart-item-img-box">
                                     <img src="./images/women-collection-img01.png" alt="">
                                 </div>
@@ -381,7 +387,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="cart-item-container">
+                            <div class="cart-item-container" id="cart__item__clone__2">
                                 <div class="cart-item-img-box">
                                     <img src="./images/women-collection-img01.png" alt="">
                                 </div>
