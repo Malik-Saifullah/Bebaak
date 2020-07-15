@@ -243,6 +243,10 @@ img {
                 cursor: pointer;
             }
 
+            a{
+                color: $colorBlack;
+            }
+
             .login-btn {
                 font-size: 14px;
                 border: 2px solid $colorBlack;
@@ -928,7 +932,7 @@ img {
 .user-cart-item {
     padding-top: 20px;
     padding-bottom: 20px;
-    border-bottom: 8px solid gainsboro;
+    border-bottom: 3px solid #f7f7f7;
 
     #hero-cart-banner {
         .container {
@@ -975,7 +979,7 @@ img {
         .user-cart-item-detail-info {
             display: grid;
             grid-template-columns: 2fr 1fr;
-            column-gap: 20px;
+            column-gap: 117px;
 
             @media(max-width: 992px) {
                 grid-template-columns: 1fr;
@@ -997,7 +1001,7 @@ img {
                 }
 
                 margin: 20px 0;
-                border-bottom: 8px solid gainsboro;
+                border-bottom: 3px solid #f7f7f7;
                 padding-top: 20px;
                 padding-bottom: 30px;
 
@@ -1111,7 +1115,7 @@ img {
                         }
 
                         input {
-                            background-color: gainsboro;
+                            background-color: #f1f1f1;
                             text-align: right;
                             width: 100%;
                             padding: 10px 20px;
@@ -1146,7 +1150,7 @@ img {
                             padding: 10px;
                             border: 2px solid red;
                             background-color: red;
-                            color: $colorWhite;
+                            // color: $colorWhite;
                             @include fontBold;
                             transition: .5s ease-in-out;
                             -webkit-transition: .5s ease-in-out;
@@ -1156,10 +1160,15 @@ img {
                             -webkit-box-shadow: 0px 0px 18px -5px rgba(0, 0, 0, 0.35);
                             -moz-box-shadow: 0px 0px 18px -5px rgba(0, 0, 0, 0.35);
                             box-shadow: 0px 0px 18px -5px rgba(0, 0, 0, 0.35);
-
                             &:hover {
-                                color: red;
                                 background-color: transparent;
+                                a{
+                                    display: block;
+                                    color: red;
+                                }
+                            }
+                            a{
+                                color: $colorWhite;
                             }
                         }
                     }
@@ -1891,7 +1900,7 @@ img {
     }
 
     .shoping-detail {
-        background-color: gainsboro;
+        background-color: #f8fafb;
         padding-left: 15px;
         padding-right: 15px;
 
@@ -1908,7 +1917,7 @@ img {
             .shoping-detail-title-box {
                 display: flex;
                 align-items: center;
-                border-bottom: 5px solid gray;
+                border-bottom: 3px solid #f7f7f7;
 
                 h3 {
                     font-size: 24px;
@@ -1931,7 +1940,7 @@ img {
             }
 
             .selected-product-box {
-                border-bottom: 5px solid gray;
+                border-bottom: 3px solid #f7f7f7;
 
                 .selected-products {
                     margin: 20px 0;
@@ -1964,7 +1973,7 @@ img {
             }
 
             .add-coupon-box {
-                border-bottom: 5px solid gray;
+                border-bottom: 3px solid #f7f7f7;
 
                 p {
                     font-size: 14px;
@@ -1972,7 +1981,7 @@ img {
 
                 input {
                     width: 100%;
-                    background-color: rgb(231, 230, 230);
+                    background-color: #f1f1f1;
                     border: 0;
                     padding: 10px 20px;
                     margin-bottom: 20px;
@@ -1981,7 +1990,7 @@ img {
             }
 
             .selected-product-price-box {
-                border-bottom: 5px solid gray;
+                border-bottom: 3px solid #f7f7f7;
 
                 div {
                     display: flex;
@@ -2021,6 +2030,7 @@ img {
     display: grid;
     background-color: $colorBlack;
     width: 100%;
+    margin-top: 60px;
 
     .container {
         .footer-top {
