@@ -115,9 +115,7 @@ proQty.on('click', '.qtybtn', function () {
     $button.parent().find('input').val(newVal);
 });
 
-function removeSection(){
+function removeSection() {
     var myobj = document.getElementById("cart__item__");
     myobj.remove();
 }
-
-
